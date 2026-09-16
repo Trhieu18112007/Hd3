@@ -1,0 +1,129 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* =========================
+   CSS GRID - BỐ CỤC TỔNG THỂ
+========================= */
+
+.portfolio {
+    width: min(1100px, 90%);
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+/* Header chiếm toàn bộ chiều ngang */
+
+.header {
+    grid-column: 1 / -1;
+
+    padding: 40px;
+    text-align: center;
+
+    background: white;
+    border-radius: 12px;
+}
+
+/* =========================
+   CÁC SECTION
+========================= */
+
+.about,
+.skills,
+.projects,
+.footer {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   FLEXBOX - DANH SÁCH KỸ NĂNG
+========================= */
+
+.skill-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.skill {
+    padding: 8px 15px;
+
+    background: #e8e8e8;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+/* =========================
+   FLEXBOX - DANH SÁCH DỰ ÁN
+========================= */
+
+.project-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.project {
+    flex: 1 1 250px;
+
+    padding: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    grid-column: 1 / -1;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .portfolio {
+        grid-template-columns: 1fr;
+    }
+
+    .header,
+    .footer {
+        grid-column: auto;
+    }
+
+}
