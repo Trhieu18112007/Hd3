@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brew & Still – Quán cà phê hiện đại, không gian tĩnh lặng giữa lòng thành phố. Mở cửa 7:00 – 22:00 mỗi ngày." />
+  <title>Brew & Still | Specialty Coffee</title>
+</head>
+<body>
+  <!--
+    <header>: Nhận diện thương hiệu + điều hướng chính.
+    SEO: Googlebot xác định đây là vùng tiêu đề, không phải nội dung.
+    Accessibility: Screen reader thông báo "banner landmark",
+    người dùng có thể bỏ qua bằng phím tắt để đến nội dung chính.
+  -->
+  <header>
+    <div>
+      <!-- Logo thương hiệu -->
+      <a href="#" aria-label="Brew & Still – Trang chủ">
+        <strong>BREW &amp; STILL</strong>
+      </a>
+      <p><em>Specialty Coffee · Hà Nội</em></p>
+    </div>
+    <!--
+      <nav>: Khu vực điều hướng chính của trang.
+      SEO: Giúp Google hiểu cấu trúc link nội bộ.
+      Accessibility: "navigation landmark" – người dùng nhảy
+      thẳng vào menu hoặc bỏ qua menu chỉ với một phím tắt.
+    -->
+    <nav aria-label="Menu điều hướng chính">
+      <ul>
+        <li><a href="#story">Câu chuyện</a></li>
+        <li><a href="#menu">Thực đơn</a></li>
+        <li><a href="#space">Không gian</a></li>
+        <li><a href="#visit">Ghé thăm</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--
+    <main>: Duy nhất một thẻ này trên toàn trang – chứa toàn bộ
+    nội dung chính. Không bao giờ đặt trong header/footer/nav/aside.
+    SEO: Công cụ tìm kiếm tập trung xếp hạng nội dung trong <main>.
+    Accessibility: "main landmark" – nút "Skip to content" chuẩn
+    WCAG 2.4.1 sẽ nhảy thẳng đến đây.
+  -->
+  <main>
+    <!-- Liên kết bỏ qua điều hướng – chuẩn Accessibility -->
+    <a href="#main-content" class="skip-link">Bỏ qua điều hướng, đến nội dung chính</a>
+    <!--
+      <section id="hero">: Phần hero/banner đầu trang.
+      Dùng <section> vì đây là một khối nội dung có chủ đề riêng
+      (giới thiệu nhanh thương hiệu), không phải nội dung độc lập.
+      SEO: Kết hợp <h1> + <section> tạo outline rõ ràng cho trang.
+    -->
+    <section id="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">
+        Một tách cà phê.<br />
+        Một khoảnh khắc tĩnh lặng.
+      </h1>
+      <p>
+        Giữa nhịp sống hối hả, <strong>Brew &amp; Still</strong> là nơi
+        bạn được phép chậm lại — với những ly cà phê specialty được
+        chăm chút từng mililit.
+      </p>
+      <a href="#menu" role="button">Xem thực đơn →</a>
+    </section>
+    <!--
+      <section id="story">: Câu chuyện thương hiệu.
+      SEO: Nội dung dài, có từ khóa liên quan giúp xếp hạng
+      tốt hơn cho truy vấn "quán cà phê specialty Hà Nội".
+      Accessibility: Tiêu đề h2 tạo điểm mốc điều hướng cho
+      người dùng screen reader.
+    -->
+    <section id="story" aria-labelledby="story-heading">
+      <h2 id="story-heading">Câu chuyện của chúng tôi</h2>
+      <article>
+        <h3>Bắt đầu từ một câu hỏi</h3>
+        <p>
+          Năm 2019, người sáng lập Minh Khôi đặt ra câu hỏi:
+          <em>"Tại sao cà phê ngon lại phải uống vội?"</em> — và từ đó,
+          <strong>Brew &amp; Still</strong> ra đời với triết lý
+          <strong>Slow Coffee</strong>.
+        </p>
+      </article>
+      <article>
+        <h3>Cà phê Specialty là gì?</h3>
+        <p>
+          Chúng tôi chỉ sử dụng hạt cà phê đạt điểm <strong>SCA từ 80+</strong>,
+          được thu mua trực tiếp từ nông trại tại Đà Lạt và Sơn La.
+          Mỗi mẻ rang được thực hiện thủ công theo từng lô nhỏ để
+          đảm bảo hương vị tươi mới nhất.
+        </p>
+      </article>
+      <article>
+        <h3>Không gian được thiết kế để nghỉ ngơi</h3>
+        <p>
+          Kiến trúc sư Hà Linh đã thiết kế nội thất lấy cảm hứng từ
+          <strong>Japandi</strong> (Nhật Bản + Scandinavia): gỗ sáng màu,
+          ánh sáng tự nhiên và tuyệt đối không có nhạc ồn ào.
+        </p>
+      </article>
+    </section>
+    <!--
+      <section id="menu">: Thực đơn nổi bật.
+      Mỗi nhóm đồ uống dùng <section> con để tạo phân cấp rõ ràng.
+      SEO: Tên món ăn/đồ uống trong heading giúp xuất hiện trong
+      local search ("cà phê pour over Hà Nội").
+    -->
+    <section id="menu" aria-labelledby="menu-heading">
+      <h2 id="menu-heading">Thực đơn</h2>
+      <p><em>Tất cả đồ uống đều có thể tùy chỉnh nồng độ và lượng đường.</em></p>
+      <!-- Nhóm: Cà phê -->
+      <section aria-labelledby="coffee-heading">
+        <h3 id="coffee-heading">☕ Cà phê Specialty</h3>
+        <ul>
+          <li>
+            <strong>Pour Over</strong>
+            <span> — Phương pháp chiết xuất thủ công, làm nổi bật hương hoa và trái cây</span>
+            <data value="65000">65.000₫</data>
+          </li>
+          <li>
+            <strong>Cold Brew 24h</strong>
+            <span> — Ủ lạnh 24 tiếng, vị mượt mà, ít chua</span>
+            <data value="75000">75.000₫</data>
+          </li>
+          <li>
+            <strong>Espresso Tonic</strong>
+            <span> — Espresso double shot trên nước tonic, thêm vỏ cam</span>
+            <data value="70000">70.000₫</data>
+          </li>
+          <li>
+            <strong>Flat White</strong>
+            <span> — Espresso + sữa tươi nguyên kem, lớp foam mịn</span>
+            <data value="65000">65.000₫</data>
+          </li>
+        </ul>
+      </section>
+      <!-- Nhóm: Non-coffee -->
+      <section aria-labelledby="noncoffee-heading">
+        <h3 id="noncoffee-heading">🍵 Non-Coffee</h3>
+        <ul>
+          <li>
+            <strong>Matcha Latte</strong>
+            <span> — Matcha ceremonial grade từ Uji, Nhật Bản</span>
+            <data value="70000">70.000₫</data>
+          </li>
+          <li>
+            <strong>Hojicha Tonic</strong>
+            <span> — Trà rang hojicha + soda tonic, hương khói nhẹ</span>
+            <data value="65000">65.000₫</data>
+          </li>
+          <li>
+            <strong>Yuzu Lemonade</strong>
+            <span> — Chanh yuzu tươi + mật ong + soda</span>
+            <data value="60000">60.000₫</data>
+          </li>
+        </ul>
+      </section>
+      <!-- Nhóm: Bánh -->
+      <section aria-labelledby="food-heading">
+        <h3 id="food-heading">🥐 Bánh &amp; Snack</h3>
+        <ul>
+          <li>
+            <strong>Croissant Bơ Pháp</strong>
+            <span> — Nướng tươi mỗi sáng lúc 6:30</span>
+            <data value="45000">45.000₫</data>
+          </li>
+          <li>
+            <strong>Bánh Financier Hạnh Nhân</strong>
+            <span> — Vỏ giòn, trong ẩm mềm</span>
+            <data value="40000">40.000₫</data>
+          </li>
+          <li>
+            <strong>Yogurt Granola Bowl</strong>
+            <span> — Yogurt Hy Lạp + granola tự làm + trái cây theo mùa</span>
+            <data value="55000">55.000₫</data>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <!--
+      <section id="space">: Giới thiệu không gian quán.
+      Dùng <figure> + <figcaption> cho hình ảnh có chú thích –
+      đây là cặp thẻ Semantic dành riêng cho hình ảnh/media minh họa.
+      SEO: Alt text và figcaption giúp Google Images lập chỉ mục.
+      Accessibility: Screen reader đọc figcaption như mô tả hình.
+    -->
+    <section id="space" aria-labelledby="space-heading">
+      <h2 id="space-heading">Không gian</h2>
+      <p>
+        <strong>Brew &amp; Still</strong> rộng 200m², sức chứa 40 chỗ ngồi.
+        Thiết kế ưu tiên ánh sáng tự nhiên và sự yên tĩnh.
+      </p>
+      <figure>
+        <img
+          src="images/main-area.jpg"
+          alt="Khu vực ngồi chính của Brew & Still với bàn gỗ sáng màu và cửa sổ lớn nhìn ra phố"
+          width="800"
+          height="500"
+        />
+        <figcaption>Khu vực ngồi chính — ánh sáng tự nhiên xuyên suốt cả ngày</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="images/brew-bar.jpg"
+          alt="Quầy pha chế Brew Bar với các dụng cụ pour over và espresso machine La Marzocco"
+          width="800"
+          height="500"
+        />
+        <figcaption>Brew Bar — nơi mỗi ly cà phê được pha thủ công trước mặt bạn</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="images/reading-nook.jpg"
+          alt="Góc đọc sách nhỏ với ghế đệm mềm, kệ sách và đèn đọc ấm"
+          width="800"
+          height="500"
+        />
+        <figcaption>Reading Nook — góc yêu thích của những người thích đọc sách một mình</figcaption>
+      </figure>
+      <ul aria-label="Tiện ích quán">
+        <li>📶 WiFi tốc độ cao (300 Mbps, mật khẩu: brewstill2024)</li>
+        <li>🔌 Ổ cắm điện tại mỗi bàn</li>
+        <li>🅿️ Bãi giữ xe máy miễn phí</li>
+        <li>♿ Lối vào và nhà vệ sinh dành cho người khuyết tật</li>
+        <li>🐾 Pet-friendly (khu vực ngoài trời)</li>
+      </ul>
+    </section>
+    <!--
+      <section id="visit">: Thông tin đến quán.
+      Dùng <address> cho thông tin liên hệ/địa chỉ của cơ sở.
+      SEO: Google đọc được địa chỉ, giờ mở cửa → hiển thị trong
+      Google Maps và Local Pack (3 quán đầu trong tìm kiếm địa phương).
+      Accessibility: Screen reader thông báo đây là thông tin liên lạc.
+    -->
+    <section id="visit" aria-labelledby="visit-heading">
+      <h2 id="visit-heading">Ghé thăm chúng tôi</h2>
+      <address>
+        <p>
+          📍 <strong>Địa chỉ:</strong>
+          15 Ngõ Tạm Thương, Hoàn Kiếm, Hà Nội
+        </p>
+        <p>
+          📞 <strong>Điện thoại:</strong>
+          <a href="tel:+842412345678">024 1234 5678</a>
+        </p>
+        <p>
+          📧 <strong>Email đặt bàn:</strong>
+          <a href="mailto:hello@brewandstill.vn">hello@brewandstill.vn</a>
+        </p>
+        <p>
+          📱 <strong>Instagram:</strong>
+          <a href="https://instagram.com/brewandstill" target="_blank" rel="noopener noreferrer">
+            @brewandstill
+          </a>
+        </p>
+      </address>
+      <!--
+        <time>: Thẻ Semantic dành riêng cho ngày giờ.
+        SEO: Máy tìm kiếm đọc được giờ mở cửa → hiển thị trực tiếp
+        trên Google Search mà không cần vào trang.
+        Accessibility: Screen reader đọc datetime attribute thay vì
+        chỉ đọc text hiển thị.
+      -->
+      <section aria-labelledby="hours-heading">
+        <h3 id="hours-heading">Giờ mở cửa</h3>
+        <ul>
+          <li>
+            Thứ Hai – Thứ Sáu:
+            <time datetime="07:00">7:00 sáng</time>
+            –
+            <time datetime="22:00">10:00 tối</time>
+          </li>
+          <li>
+            Thứ Bảy – Chủ Nhật:
+            <time datetime="07:00">7:00 sáng</time>
+            –
+            <time datetime="23:00">11:00 tối</time>
+          </li>
+        </ul>
+        <p><em>Không nhận đặt bàn – first come, first served.</em></p>
+      </section>
+      <!-- Nhúng Google Maps -->
+      <section aria-labelledby="map-heading">
+        <h3 id="map-heading">Bản đồ</h3>
+        <iframe
+          title="Bản đồ vị trí Brew & Still tại 15 Ngõ Tạm Thương, Hoàn Kiếm, Hà Nội"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8!2d105.85!3d21.03!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDAx!5e0!3m2!1svi!2svn!4v1"
+          width="600"
+          height="350"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-label="Bản đồ Google Maps chỉ đường đến Brew & Still"
+        ></iframe>
+      </section>
+    </section>
+  </main>
+  <!--
+    <footer>: Khu vực cuối trang – bản quyền, mạng xã hội, sitemap.
+    SEO: Nội dung trong footer được Google đánh giá thấp hơn <main>,
+    tránh pha loãng từ khóa quan trọng.
+    Accessibility: "contentinfo landmark" – người dùng biết đã đến
+    cuối trang và tìm được thông tin pháp lý / liên kết phụ.
+  -->
+  <footer>
+    <div>
+      <p><strong>BREW &amp; STILL</strong></p>
+      <p><em>Specialty Coffee · Est. 2019 · Hà Nội</em></p>
+    </div>
+    <nav aria-label="Liên kết mạng xã hội">
+      <a href="https://instagram.com/brewandstill" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://facebook.com/brewandstill" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://tiktok.com/@brewandstill" target="_blank" rel="noopener noreferrer">TikTok</a>
+    </nav>
+    <nav aria-label="Điều hướng phụ cuối trang">
+      <a href="#story">Câu chuyện</a>
+      <a href="#menu">Thực đơn</a>
+      <a href="#space">Không gian</a>
+      <a href="#visit">Ghé thăm</a>
+    </nav>
+    <p>
+      <small>
+        &copy; <time datetime="2026">2026</time> Brew &amp; Still.
+        Thiết kế với ☕ và HTML5 thuần túy.
+      </small>
+    </p>
+  </footer>
+</body>
+</html>
+📌 Điểm mới so với trang Portfolio
+Tính năng	Chi tiết
+<figure> + <figcaption>	Bọc hình ảnh không gian quán – chuẩn Semantic cho media có chú thích
+<time datetime="">	Giờ mở cửa – Google đọc được, hiển thị ngay trên Search
+<data value="">	Giá tiền – máy tìm kiếm đọc giá trị số, con người đọc định dạng đẹp
+<address>	Địa chỉ + liên hệ → giúp Google Maps & Local SEO
+<iframe> có title	Bản đồ nhú
+
+
+
